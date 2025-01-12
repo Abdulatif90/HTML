@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <!-- title - bu web saytimiz nomi -->
+    <title>Lists</title>
+    <style>
+        h3, ul, ol {
+            /* title  - centerga yoziladi */
+            text-align: center;
+        }
+        ul, ol,dl {
+            /* ul - listni centerga tushiradi */
+            margin-left: 40%;
+        }
+        li {
+            /* list elementlarini centerga tushiradi */
+            text-align: left;
+        }
+        .li {
+            /* ichki list elementlarini centerga tushiradi */
+            text-align: left;
+            margin-left: -80%;
+        }
+    </style>   
+    <body>
+        <!-- h1 - bu eng katta sarlavha -->
+        <h2>Unordered lists</h2>
+        <!-- ul - bu tartibsiz ro'yxat -->
+        <ul>
+            <!-- li - bu ro'yxat elementi -->
+            <li>HTML</li>
+            <li>
+                CSS
+            </li>
+               <ul>
+                <li class="li">Bootstrap</li>
+                <li class="li">Tailwind</li>
+                <li class="li">Materialize</li> 
+               </ul> 
+            <li>JavaScript</li>
+        </ul>
+        <hr>
+        <h2>Ordered lists</h2>
+        <!-- ol - bu tartiblangan ro'yxat -->
+        <ol type="1">
+            <!-- li - bu ro'yxat elementi -->
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>
+                JavaScript
+                <!-- ul - bu ichki tartibsiz ro'yxat -->
+                <ul type="triangle">
+                    <!-- li - bu ichki ro'yxat elementi -->
+                    <li class=" li">React</li>
+                    <li class=" li">Angular</li>
+                    <li class=" li">Vue</li>
+             </li>
+        </ol> <br><br>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--audio va videolarni web sahifaga joylash-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Media</title>
+    </head>
+    <body>
+        <div>
+            <!--audio va video taglari bilan audio va video fayllarni sahifaga joylashimiz mumkin-->
+            <!--audio va video taglarida controls atributi bilan faylni boshqarish uchun kerakli elementlar chiqadi-->
+            <!--source tagi bilan faylni yo'qotish uchun kerakli faylni tanlab beramiz-->
+            <!--audio va video taglarida src atributi bilan faylning joylashgan manzilini belgilaymiz-->
+            <!--audio va video taglarida type atributi bilan faylning turi belgilanadi-->
+            <!--audio va video taglarida width va height atributlari bilan faylning o'lchamini belgilaymiz-->
+            <!-- typw - bu biz tanlagan audiomiz formatiga mos kelishi kerak , aks holda audio web o`qimaydi-->
+            <audio controls>
+                <source src="Yorqinxo_ja_Umarov_Yomg_ir_Official_Video_Ёркинхужа_Умаров_Ё.m4a" type="audio/mpeg">
+                audioni tinglash uchun audio tagini ishlatamiz
+            </audio>
+        </div>
+        <div>
+            <video width="400" height="300" controls>
+                <source src = "video.mp4" type="video/mp4">
+                videoni ko'rish uchun video tagini ishlatamiz
+            </video>
+        </div>
+        <!--youtube video joylash uchun iframe tagini ishlatamiz-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YqjSnwfsiiY?si=-YPsbFXM1UdPt-ff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </body>
+</html>

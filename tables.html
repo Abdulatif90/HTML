@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- buni biz tables deb nom qo`yib oldik -->
+        <title  > Tables </title>
+        <!-- style ni ichiga yozib qo`yamiz -->
+        <!-- border - qatorlar orasida chiziq -->
+        <!-- qatorlar orasida masofa -->
+        <style>
+            table {
+            border-collapse: collapse;
+            width: 40%;
+            margin-left: 30%;
+            }   
+            th, td { 
+                border: 2px solid blue; 
+                 padding: 10px;  
+                 text-align: center;
+                 vertical-align: middle;
+                }
+            th {
+                background-color: #f2f2f2;
+            }
+            h1  {
+                text-align: center;
+            }
+            .age {
+                background-color: rgb(255, 251, 185);
+                color: red;
+            }
+            .hobby {
+                background-color: rgb(255, 251, 185);
+                color : purple;
+            }   
+            .name {
+                background-color:rgb(255, 251, 185);
+                color: brown;
+            }
+            .number {
+                background-color: rgb(255, 251, 185);
+                color: green;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!-- sarlavhasiga ham table degan nomni berdim -->
+        <h1>Table</h1>
+        <table >
+            <!-- th - table head - jadval boshi -->
+            <thead>
+                <!-- tr - table row - jadval qator -->
+                <tr>
+                    <th class="number" > <!-- th - table  head data  - jadval boshi malumotlari -->
+                        N
+                    </th> 
+                    <th class="name">
+                        First & Last Name
+                    </th>
+                    <th class = "age">
+                        Age
+                    </th>
+                    <th class="hobby">
+                        Hobby
+                    </th>
+                </tr>
+                <tbody> <!-- tbody - table body - jadvalning o`zi -->
+                    <tr> <!-- tr - table row - jadval qator -->
+                        <td class="number"> <!-- td - table data - jadval malumotlari -->
+                            1
+                        </td>
+                        <td class="name">
+                            Sharipov Abdulatif
+                        </td>
+                        <td class = "age"> 
+                            35
+                        </td>
+                        <td class="hobby">
+                            coding
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="number">
+                            2
+                        </td>
+                        <td  class="name">
+                            Umarov Bekzod
+                        </td>
+                        <td class = "age">
+                            40
+                        </td>
+                        <td  class="hobby">
+                            reading
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="number">
+                            3
+                        </td>
+                        <td  class="name">
+                            Abdurahimov Aziz
+                        </td>
+                        <td class = "age">
+                            25
+                        </td>
+                        <td class="hobby">
+                            playing football
+                        </td>
+                    </tr>   
+                </tbody>
+            </thead>
+        </table>
+    </body>

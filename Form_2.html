@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title  > Form </title>
+        <style>
+            /* label - bu inputning nomi */
+            /* input - bu malumotlarni kirish uchun qollaniladi
+            input ni tarjimasi ham kiritish deb nomlanadi */
+            /*type - bu inputning turi yani text yoki data ham bo`lishin mumkin */
+            /* name - bu serverga yuboriladigan nom hisoblanib 
+            shu nom serverda user bolib foydalanamiz */
+            /* id - bu inputning id si yani uning nomi keyinchalik bu id orqali buni 
+            sytleni ham o`zgartirishimiz mumkin */
+            /* placeholder - bu inputga ichiga qanday malumot kiritish uchun qo`yilgan yozuv 
+            bu foydalananuvchiga oson bo`lishi uchun foydalaniladi*/
+            label {
+                color: blue;
+                font-size: 20 px;
+            }
+            password {
+                color:blue;
+                font-size: 20 px;
+            }
+            input {
+                width: 200px;   
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid blue;
+                margin: 5px;
+            }
+            #password {
+                margin-left: 10 px;
+            }
+            button {
+                width: 100px;
+                height: 30px;
+                background-color: blue;
+                color: white;
+                border: 2px solid green;
+                border-radius: 50px;
+                margin-left: 10px;
+            }
+            #student {
+                width: 10px;
+                height: 10px;
+            }
+            #erkak, #ayol {
+                width: 10px;
+                height: 10px;
+            }
+            #ayol {
+                margin-top: 0px;
+            }
+            #passport {
+                width: 200px;
+                height: 50px;
+                border-radius: 5%;
+                border: 1px;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- form - bu forma yaratish uchun ishlatiladi -->
+        <!-- formdan keyin inputlar yaratiladi -->
+         <!-- action bu php formatidan formasidan foydalanish uchun asosan backendda foydalaniladi--> 
+         <!-- method - bu formani yuborish usuli get yoki post bo`lishi mumkin -->   
+        <form action="form.php" method="get">
+                <!-- form - bu forma yaratish uchun ishlatiladi -->
+                <!-- formdan keyin inputlar yaratiladi -->
+            <!-- label - bu inputning nomi -->
+            <!-- input - bu malumotlarni kirish uchun qollaniladi
+            input ni tarjimasi ham kiritish deb nomlanadi -->
+            <!--type - bu inputning turi yani text yoki data ham bo`lishin mumkin -->
+            <!-- name - bu serverga yuboriladigan nom hisoblanib 
+            shu nom serverda user bolib foydalanamiz -->
+            <!-- id - bu inputning id si yani uning nomi keyinchalik bu id orqali buni 
+            sytleni ham o`zgartirishimiz mumkin -->
+            <!-- placeholder - bu inputga ichiga qanday malumot kiritish uchun qo`yilgan yozuv 
+            bu foydalananuvchiga oson bo`lishi uchun foydalaniladi-->
+            <!-- for bu label va inputni bir birga boglash uchun foydalaniladi-->
+            <label for="Username"> Username: </label>
+            <!-- labeldan keyin inputni foydalanish orqali malumotlarni kiritishimiiz mumkin boladi -->   
+            <input type="text" name="username" id="username" placeholder="Enter your username">
+            <br>
+            <label for="password"> Password: </label>
+            <input type="password" name="password" id="password" placeholder="Enter your password"> <br><br>
+            <label for = "email"> E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <br><br>
+            <label for="sana"> Tug`ilgan kun: </label>
+            <input type="date" name="sana" id="sana"> <br><br>  
+            <label for="student"> Talaba:</label>
+            <input type="checkbox" name="student" id="student">
+            <br><br>
+            <label for="phone"> Telefon:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+            <br><br>    
+            <label for="erkak"> erkak:</label>
+            <input type="radio" name="gender" value="male" id = "erkak">
+            <br><br>
+            <label for="ayol"> ayol:</label>
+            <input type="radio" name="gender" value="female" id = "ayol"> <br><br>
+            <label for = "passport"> Passport:</label>
+            <input type="file" name="passport" id="passport"> <br><br>
+            <label for =" tajriba"> Tajriba(yil):</label>
+            <!-- select - bu dropdown menu yaratish uchun ishlatiladi va bir nechta variantdan birini tanlash -->
+            <select name="experience" id="tajriba">
+                    <option value="1"> </option>
+                    <option value="2">tajribasiz</option>
+                    <option value="3">1</option>
+                    <option value="4">2</option>
+                    <option value="5">3</option>
+                    <option value="6">4</option>
+            </select>
+            <br><br>
+            <label for="haqida"> O`zingiz haqingizda:</label> <br>
+            <textarea name = "about" id="haqida" cols   ="30" rows ="10"></textarea> <br><br>
+            <!-- button - bu tugma yaratish uchun ishlatiladi -->
+            <!-- type - bu tugmani turini belgilaydi -->
+            <!-- submit - bu tugma bosilganda formani yuborish uchun ishlatiladi -->
+            <button type="submit"> login</button>
+       </form>   
+    </body>
+</html>

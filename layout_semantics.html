@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Layout_Semantics</title>
+            <!--color - yozuvni rangi, text-align - bu yozuvning containerga joylashuv orni
+            padding -border bn yozuv o`rtasidagi joy, height- containerni balandligi
+            float- containerni qaerga joylashishini korsatadi-->
+            <style>
+                header {
+                    background-color: #f4f4f4;
+                    color: #333;
+                    text-align: center;
+                    padding: 1em;
+                    height: 50px;
+                    line-height: 50px;
+                }
+                nav {
+                    background-color: green;
+                    color: #fff;
+                    text-align: center;
+                    height: 100px;
+                    line-height: 100px;
+                }
+                section {
+                    background-color: #f4f4f4;
+                    color: #333333;
+                    text-align: center;
+                    height: 200px;
+                    line-height: 200px;
+                    width:70%;
+                    float: left;   
+                }
+                aside {
+                    background-color: blue  ;
+                    color: #fff;
+                    text-align: center;
+                    height: 200px;
+                    line-height: 200px;
+                    width:30%;
+                    float: right;
+                }
+                footer {
+                    background-color: #af1616;
+                    color: #fff;
+                    text-align: center;
+                    height: 100px;
+                    line-height: 100px;
+                    width: 100%;
+                    float:left
+                }             
+            </style>
+        </head>
+        <body>
+            <!--header - bu yozuvni yuqori qismi,
+             nav - bu navigatsiya, section - bu asosiy qism,
+              aside - bu qo`shimcha qism, footer - bu pastki qism-->
+            <header class="pattern">
+                Layout and  semantics
+            </header>    
+            <nav class="pattern">
+                nav
+            </nav>
+            <section class="pattern">
+                section
+            </section>
+            <aside  class="pattern">
+                aside   
+            </aside>
+            <footer class="pattern">
+                footer
+            </footer>
+        </body>
+    </html>
